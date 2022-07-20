@@ -1,1 +1,9 @@
 /* below the fold CSS goes here */
+.previous-winners {
+    background-color: rgb(236, 16, 0);
+    background-image: url('https://main--aem-rockstar-website--adobe.hlx.page/media_1f727cf12506fe17b6b682ae281dcbf82dbb4a35c.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-size: 50%;
+    background-position-x: right;
+}
