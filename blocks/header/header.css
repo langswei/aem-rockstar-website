@@ -1,3 +1,18 @@
+header {
+  --background-color: rgb(10,17,37);
+}
+
+.header .icon-home {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-40%);
+}
+
+.header .icon-home svg {
+  height: 24px;
+}
+
 /* header and nav layout */
 header nav {
   display: grid;

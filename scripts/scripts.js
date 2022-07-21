@@ -272,8 +272,15 @@ export function decorateSections($main) {
       const meta = readBlockConfig(sectionMeta);
       const keys = Object.keys(meta);
       keys.forEach((key) => {
-        if (key === 'style') section.classList.add(toClassName(meta.style));
-        else section.dataset[toCamelCase(key)] = meta[key];
+        if (key === 'style') {
+          section.classList.add(toClassName(meta.style));
+        } else if(key === 'background') {
+          section.style.backgroundImage = `url(${meta.background})`;
+          section.style.backgroundSize = 'cover';
+          section.style.backgroundRepeat = 'no-repeat';
+        }else {
+          section.dataset[toCamelCase(key)] = meta[key];
+        }
       });
       sectionMeta.remove();
     }

@@ -38,7 +38,7 @@
   --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 41px;
 
 }
 
@@ -234,4 +234,8 @@ main .section[data-section-status='initialized'] {
 
 main .section.highlight {
   background-color: var(--highlight-background-color);
+}
+
+main .section.red-background {
+  background-color: rgb(236, 16, 0);
 }
